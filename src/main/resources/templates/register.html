@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head xmlns="http://www.w3.org/1999/html">
+    <title>Register Here</title>
+</head>
+    <body>
+        <form action="http://localhost:9090/api/register" method="post">
+            <label>Email ID:</label>
+            <input type="email" name="email">
+            <br><br>
+            <label>Password:</label>
+            <input type="password" name="password">
+            <br><br>
+            <label>Name:</label>
+            <input type="text" name="name">
+            <br><br>
+            <label>Role:</label>
+            <select name="role" id="role">
+                <option value="customer">Customer</option>
+                <option value="admin">Admin</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Register">
+        </form>
+        <p>Already registered? <a href="/api/login">Click here to login</a></p>
+    </body>
+</html>
