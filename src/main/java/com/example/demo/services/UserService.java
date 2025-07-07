@@ -21,6 +21,7 @@ public class UserService {
 	JavaMailSender mailSender;
 
 	public String registerUser(User user) {
+		userRepo.save(user);
 		return generateOtp(user.getEmail());
 	}
 
